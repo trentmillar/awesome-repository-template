@@ -4,6 +4,7 @@ Full featured repository template
 ## Includes
 - [Sentiment Bot](https://github.com/behaviorbot/sentiment-bot) 
 - [Stale Bot](https://probot.github.io/apps/stale/)
+- [Welcome bot](https://probot.github.io/apps/welcome)
 - Code of conduct
 - Funding
 
