@@ -3,6 +3,7 @@ Full featured repository template
 
 ## Includes
 - [Sentiment Bot](https://github.com/behaviorbot/sentiment-bot) 
+- Code of conduct
 
 
 ### .gitignore
