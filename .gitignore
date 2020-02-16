@@ -2,6 +2,8 @@
 
 # the following are specific to this repo and can be deleted if they affect your specific rules
 .vscode
+DELETEME.txt
+DELETEME.py
 
 # END DELETEME
 
