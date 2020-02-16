@@ -17,7 +17,11 @@ Full featured repository template in two steps.
    - :smile: - execute `git add . && git commit -m "updating readme with steps" && git push` (or however you commit changes)
    - :sob: - execute `git checkout -- .` to revert everything and try again.
 
-Note, the *.gitignore* will exclude the DELETEME files when committing changes but I suggest you delete them after you are done,  they are useless once you commit these changes.
+Note, the **DELETEME** files are useless after you are done. I suggest you remove them from your repo using `git rm`
+
+## Test it out
+
+Go to *issues* in this repository on Github and create a new issue. You will see one of the templates in action.
 
 ## Includes
 - [Sentiment Bot](https://github.com/behaviorbot/sentiment-bot) 
