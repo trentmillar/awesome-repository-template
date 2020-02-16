@@ -8,7 +8,7 @@ labels: bug
 
 (A clear and concise description of what the bug is)
 
-### Have you read the [Contributing Guidelines on issues](../../CONTRIBUTING.md#ways-to-contribute)?
+### Have you read the [Contributing Guidelines on issues](../CONTRIBUTING.md#ways-to-contribute)?
 
 (Write your answer here.)
 
@@ -18,7 +18,7 @@ _A clear and concise description of what the problem is._
 ### Requested Information
 _Make sure your have performed every step and checked the applicable boxes before submitting your issue. Thank you!_
 
-- [ ] Read the [Contributing Guide and Policy](../../CONTRIBUTING.md) and [the Code of Conduct](../../CODE_OF_CONDUCT.md)
+- [ ] Read the [Contributing Guide and Policy](../CONTRIBUTING.md) and [the Code of Conduct](../CODE_OF_CONDUCT.md)
 - [ ] Searched the problem in [issues](https://github.com/{{github_account}}/{{repo_name}}/issues)
 - [ ] Searched the problem in the [docs](https://{{repo_name}}.github.io/docs/#/help/FAQ)
 - [ ] Searched the problem in the [forum]({{forum_url}})

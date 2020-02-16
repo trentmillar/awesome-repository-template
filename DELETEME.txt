@@ -1,0 +1,5 @@
+contact_email=contact@fake.com
+github_account=trentmillar
+repo_name=my-awesome-repo
+forum_url=groups.google.com/my-group
+discord_url=discord.gg/my-discord
