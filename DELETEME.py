@@ -4,6 +4,12 @@ import os
 ROOT_DIR='.'
 INCLUDE_DIRS=['.github']
 
+PROPERTY_SPLITER='='
+
+TOKEN_FILE='DELETEME.txt'
+TOKEN = '@'
+TOKEN_GROUP = '{{' + TOKEN + '}}'
+
 
 def build_include_dirs():
     full_include_dirs = []
@@ -36,7 +42,38 @@ def replaceable_files():
     return replaceables
 
 
+def build_token_pairs():
+    try:
+        pairs = {}
+        with open(os.path.join(ROOT_DIR, TOKEN_FILE), 'r') as file:
+            for line in file.read().splitlines():
+               kv = line.split(PROPERTY_SPLITER)
+               key = TOKEN_GROUP.replace(TOKEN, kv[0])
+               pairs[key] = kv[1]
+        return pairs
+
+    except IOError:
+        print('This script must be executed in the root of the repo and %s must exist' % TOKEN_FILE)
+
+
+def substitute_tokens(files_to_replace, key_values):
+    try:
+        for file_path in files_to_replace:
+            with open(file_path, 'r') as file:
+                content = file.read()
+
+            for (key, value) in key_values.items():
+                content = content.replace(key, value)
+
+            with open(file_path, 'w') as file:
+                file.write(content)
+
+    except IOError as error:
+        print('Unable to substitute, %e', error)
+
+
 if __name__ == "__main__":
     files = replaceable_files()
-    for file in files:
-        print(file)
+    pairs = build_token_pairs()
+    substitute_tokens(files, pairs)
+
