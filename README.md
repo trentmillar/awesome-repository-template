@@ -25,7 +25,7 @@ Note, the *.gitignore* will exclude the DELETEME files when committing changes b
 - [Welcome bot](https://probot.github.io/apps/welcome)
 - [Release drafter](https://probot.github.io/apps/release-drafter)
 - Code of conduct
-- Fundin
+- Funding
 
 ## What's in here
 
