@@ -10,8 +10,14 @@ Full featured repository template in two steps.
    
 ![repo template](https://i.imgur.com/gtMKmdn.png)
 
-3. Edit **DELETEME.txt**, replace the properties to match your details
-4. Run **DELETEME.py** from this 
+3. Clone this new repository locally, it will now contain all the template files.
+4. From within the cloned repository, edit **DELETEME.txt** and replace the properties to match your details.
+5. Run **DELETEME.py**, it is important that you `cd` to the root of your repository's location then run `python3 DELETEME.py`
+6. Execute `git status` to view the changed files. Review these changes and if you are:
+   - :smile: - execute `git add . && git commit -m "updating readme with steps" && git push` (or however you commit changes)
+   - :sob: - execute `git checkout -- .` to revert everything and try again.
+
+Note, the *.gitignore* will exclude the DELETEME files when committing changes but I suggest you delete them after you are done,  they are useless once you commit these changes.
 
 ## Includes
 - [Sentiment Bot](https://github.com/behaviorbot/sentiment-bot) 
